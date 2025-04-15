@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "mHA0Zwa7zB8=",
+  "success": true,
+  "projectFilePath": "/home/manutdniko21/nsu_stuff/Kontur_Course/csharp_course/App/App.csproj",
+  "expectedPackageFiles": [
+    "/home/manutdniko21/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/manutdniko21/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/manutdniko21/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.36/microsoft.netcore.app.host.linux-x64.6.0.36.nupkg.sha512"
+  ],
+  "logs": []
+}

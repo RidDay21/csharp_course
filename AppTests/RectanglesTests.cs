@@ -7,6 +7,9 @@ public class RectanglesTests
     //TODO напишите свои тесты
     [TestCase(0, 0, 1, 1, 1, 1, 2, 2, true)]
     [TestCase(0, 0, 1, 1, 2, 2, 3, 3, false)]
+    [TestCase(0, 0, 1, 1, 1, 1, 2, 2, true)] 
+    [TestCase(0, 0, 1, 1, 2, 2, 3, 3, false)] 
+    [TestCase(0, 0, 2, 2, 1, 1, 3, 3, true)] 
     public void TestPasses_When_IsIntersectedResult_Correct(
         // первый прямоугольник
         int x1, int y1, int x2, int y2,
