@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "J/jZizTtiGo=",
+  "dgSpecHash": "GtyFdjV2hlA=",
   "success": true,
   "projectFilePath": "/home/manutdniko21/nsu_stuff/Kontur_Course/csharp_course/AppTests/AppTests.csproj",
   "expectedPackageFiles": [
@@ -16,9 +16,7 @@
     "/home/manutdniko21/.nuget/packages/nunit/3.14.0/nunit.3.14.0.nupkg.sha512",
     "/home/manutdniko21/.nuget/packages/nunit.analyzers/3.9.0/nunit.analyzers.3.9.0.nupkg.sha512",
     "/home/manutdniko21/.nuget/packages/nunit3testadapter/4.5.0/nunit3testadapter.4.5.0.nupkg.sha512",
-    "/home/manutdniko21/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512",
-    "/home/manutdniko21/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "/home/manutdniko21/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+    "/home/manutdniko21/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []
 }
