@@ -8,37 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="488a2620-6c01-4618-8fb3-bf442392cdcc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Practise2/Benford.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Practise2/Requisites.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppTests/Practise2/RequisitesTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Distance.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/LeapYear.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Payments.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Prices.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Rectangles.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net6.0/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net6.0/App.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net6.0/App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net6.0/App.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net6.0/ref/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net6.0/ref/App.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net6.0/refint/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net6.0/refint/App.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/DistanceTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/LeapYearTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/PaymentsTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/PricesTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/RectanglesTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/App.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/App.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/AppTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/AppTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/AppTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/AppTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/ref/AppTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/ref/AppTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/refint/AppTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/refint/AppTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.App/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Practise2/Benford.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App/Practise2/Benford.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +78,7 @@
       <workItem from="1744704494436" duration="681000" />
       <workItem from="1744705202934" duration="181000" />
       <workItem from="1744705519119" duration="1531000" />
-      <workItem from="1744713359507" duration="1798000" />
+      <workItem from="1744713359507" duration="2371000" />
     </task>
     <servers />
   </component>
