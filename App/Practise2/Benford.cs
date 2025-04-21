@@ -1,21 +1,28 @@
+using System.Text.RegularExpressions;
+
 namespace App.Practise2;
 
 public class Benford
 {
- 
-    // file: Benford.cs
-    static int[] GetBenfordStatistics(string text)
+    public static int[] GetBenfordStatistics(string text)
     {
         var statistics = new int[10];
-        Array.Fill(statistics, 0);
-        string[] message = text.Split(' ');
-        for (int i = 0; i < message.Length; i++)
+        string pattern = @"\b\d+\b";
+        Regex regex = new Regex(pattern);
+        MatchCollection matches = regex.Matches(text);
+        foreach (Match match in matches)
         {
-            if (message[i].All(char.IsDigit) && message[i][0] != '0')
+            string number = match.Value;
+            if (!string.IsNullOrEmpty(number))
             {
-                statistics[message[i][0] - '0']++;
+                if (number[0] != '0')
+                {
+                    int index = number[0] - '0';
+                    statistics[index]++;
+                }
             }
         }
+        
         return statistics;
     }
 }
