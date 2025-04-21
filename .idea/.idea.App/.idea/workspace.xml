@@ -8,31 +8,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="488a2620-6c01-4618-8fb3-bf442392cdcc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Practise2/PhoneNumber.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppTests/Practise2/BenfordTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppTests/Practise2/PhoneNumberTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.App/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.App/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Practise2/NGram.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppTests/Practise2/NGramTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.App/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/App.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Practise2/Benford.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App/Practise2/Benford.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/bin/Debug/net6.0/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net6.0/App.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/bin/Debug/net6.0/App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net6.0/App.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/App.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/App.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net6.0/App.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/obj/Debug/net6.0/ref/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net6.0/ref/App.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/obj/Debug/net6.0/refint/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net6.0/refint/App.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/App.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/App.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/AppTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/AppTests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/AppTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/bin/Debug/net6.0/AppTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppTests/obj/AppTests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/AppTests.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/AppTests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/ref/AppTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/ref/AppTests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/refint/AppTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/Debug/net6.0/refint/AppTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppTests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AppTests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,21 +62,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.App.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;homework2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;RiderUnitTestingPageId&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.App.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "hw2/task4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "RiderUnitTestingPageId",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.App">
     <configuration name="App" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/App/bin/Debug/net6.0/App" />
@@ -117,6 +118,7 @@
       <workItem from="1744887748453" duration="6123000" />
       <workItem from="1744955728466" duration="7132000" />
       <workItem from="1745223429215" duration="11469000" />
+      <workItem from="1745260024439" duration="5929000" />
     </task>
     <servers />
   </component>
