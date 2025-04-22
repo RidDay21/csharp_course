@@ -13,9 +13,14 @@ public static class Program
 
         string invalidPhoneNumber = "7913 777 77 777";
         string validPhoneNumber = "+7 (913) 876 54 32";
+
+        User user3 = new User();
+
+        user3.Phone = "+8-913-780-04-32";
         
-        user1.TryUpdatePhone(invalidPhoneNumber);
-        user1.TryUpdatePhone(validPhoneNumber);
-        
+        //user3.ID =  Guid.NewGuid();//Init-only property 'App.Practice3.User.ID' can only be
+        //assigned in an object initializer, or on 'this' or 'base' in an instance
+        //constructor or an 'init' accessor
+
     }
 }
