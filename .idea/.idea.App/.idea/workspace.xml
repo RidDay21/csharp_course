@@ -76,7 +76,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.App">
+  <component name="RunManager">
     <configuration name="App" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/App/bin/Debug/net6.0/App" />
       <option name="PROGRAM_PARAMETERS" value="" />
