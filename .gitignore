@@ -1,0 +1,33 @@
+# Сборки и бинарные файлы
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.suo
+
+# Настройки IDE
+.vs/
+.idea/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Файлы пакетов
+packages/
+*.nupkg
+.nuget/
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.cache
+
+# Результаты тестов
+TestResults/
+*.trx
+
+# Файлы разработчика
+.env
+*.swp
+*.swo
