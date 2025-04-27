@@ -1,33 +1,26 @@
-# Сборки и бинарные файлы
+.idea/
+.vs/
+*.user
+*.suo
+*.DotSettings
+*.sln.DotSettings.user
+
 bin/
 obj/
-*.exe
+out/
 *.dll
 *.pdb
-*.suo
+*.exe
+*.cache
+global.json
 
-# Настройки IDE
-.vs/
-.idea/
-*.user
-*.userosscache
-*.sln.docstates
-
-# Файлы пакетов
 packages/
 *.nupkg
 .nuget/
 
-# Логи и временные файлы
-*.log
-*.tmp
-*.cache
-
-# Результаты тестов
 TestResults/
 *.trx
+*.coverage
 
-# Файлы разработчика
-.env
-*.swp
-*.swo
+*.log
+*.tmp
