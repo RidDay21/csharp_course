@@ -16,11 +16,6 @@ out/
 *.cache
 global.json
 
-# Игнорируем файлы пакетов
-packages/
-*.nupkg
-.nuget/
-
 # Игнорируем результаты тестов
 TestResults/
 *.trx
@@ -29,3 +24,4 @@ TestResults/
 # Логи и временные файлы
 *.log
 *.tmp
+
