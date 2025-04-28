@@ -1,6 +1,6 @@
 namespace App;
 
-public static partial class Rectangles
+public static class Rectangles
 {
     public static void SetRightCoordinates(ref int x1, ref int y1, ref int x2, ref int y2)
     {
