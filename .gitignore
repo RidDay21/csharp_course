@@ -12,6 +12,7 @@ obj/
 *.user
 *.userosscache
 *.sln.docstates
+global.json
 
 # Файлы пакетов
 packages/
