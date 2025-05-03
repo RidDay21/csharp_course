@@ -25,8 +25,10 @@ public static class Program
         
         user3.Phone = "+8-913-780-04-32";
         Console.WriteLine(user3.GetUserFullName());
-        
-        
+
+        UserStatProvider usp = new UserStatProvider();
+        Console.WriteLine(usp.GetUserActionStat(null,null));
+
 
     }
 }
