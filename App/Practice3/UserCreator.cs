@@ -7,17 +7,16 @@ static class UserCreator
 {
     public static User CreateUser(string login, string password, string name, string surname, string inn, string phone)
     {
-        string hashedPassword = HashPassword(password);
-        User user1 = new User(login, hashedPassword, name, surname, inn, phone);
-        
+        var hashedPassword = HashPassword(password);
+        var user1 = new User(login, hashedPassword, name, surname, inn, phone);
         return user1;
     }
 
     private static string HashPassword(string password)
     {
-        MD5 MD5Hash = MD5.Create();
-        byte[] inputBytes = Encoding.ASCII.GetBytes(password);
-        byte[] hash = MD5Hash.ComputeHash(inputBytes);
+        var MD5Hash = MD5.Create();
+        var inputBytes = Encoding.ASCII.GetBytes(password);
+        var hash = MD5Hash.ComputeHash(inputBytes);
         return Convert.ToHexString(hash);
     } 
     
