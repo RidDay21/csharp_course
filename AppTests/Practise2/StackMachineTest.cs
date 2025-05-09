@@ -37,28 +37,12 @@ public class StackMachineTest{
         TestName = "TestWithMultiplePopCommand"
     )]
     
-    [TestCase(
-        new string[] {
-            "push TestString",
-            "pop 10"
-        },
-        "",
-        TestName = "TestWithPopTheWholeString"
-    )]
-    
-    [TestCase(
-        new string[0],
-        "",
-        TestName = "TestWithEmptyString"
-    )]
-    
-    [TestCase(
-        new string[] {
-            "pop 0"
-        },
-        "",
-        TestName = "TestWithZeroPopAndEmptyString"
-    )]
+    public void TestsForStackMachine(string[] lines, string expected)
+    {
+        var result = StackMachine.CalculateString(lines);
+        
+        Assert.AreEqual(expected, result);
+    }
     
     [TestCase(
         new string[] {
@@ -68,10 +52,38 @@ public class StackMachineTest{
         "Hi, Bro!",
         TestName = "TestWithZeroPopAndNotEmptyString"
     )]
-    public void METHOD(string[] lines, string expected)
+    public void TestsForStackMachineWithZeroPopValue(string[] lines, string expected)
     {
         var result = StackMachine.CalculateString(lines);
         
         Assert.AreEqual(expected, result);
     }
+    
+    [TestCase(
+        new string[] {
+            "push TestString",
+            "pop 10"
+        },"",
+        TestName = "TestWithPopTheWholeString"
+    )]
+    
+    [TestCase(
+        new string[0] ,"",
+        TestName = "TestWithEmptyString"
+    )]
+    
+    [TestCase(
+        new string[] {
+            "pop 0"
+        },"",
+        TestName = "TestWithZeroPopAndEmptyString"
+    )]
+    
+    public void TestsForStackMachineWithEmptyReturnValue(string[] lines, string expected)
+    {
+        var result = StackMachine.CalculateString(lines);
+        
+        Assert.AreEqual(expected, result);
+    }
+    
 }

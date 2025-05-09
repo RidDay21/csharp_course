@@ -8,24 +8,21 @@ public class StackMachine
     // file: StackMachine.cs
     public static string CalculateString(string[] codeLines) 
     {
-        StringBuilder sb = new StringBuilder("");
+        var sb = new StringBuilder("");
         foreach (string line in codeLines)
         {
-            if (line.IndexOf("pop") == 0)
+            if (line.StartsWith("pop"))
             {
-                string pattern = @"\b\d+\b";
-                Regex regex = new Regex(pattern);
-                MatchCollection matches = regex.Matches(line);
-                int charsToRemove = int.Parse(matches[0].Value);
+                var charsToRemove = int.Parse(line.Substring(4));
                 sb.Remove(sb.Length - charsToRemove, charsToRemove);
             }
 
-            if (line.IndexOf("push") == 0)
+            else
             {
                 sb.Append(line.Substring(5));
             }
         }
-        string result = sb.ToString();
+        var result = sb.ToString();
         return result;
     }
 }
