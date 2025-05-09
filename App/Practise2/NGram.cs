@@ -6,20 +6,20 @@ namespace App.Practise2
 {
     public class NGram
     {
+        
+        
         public static Dictionary<string, string> CreateNGramStatistic(string text)
         {
             var bigramStats = new Dictionary<string, Dictionary<string, int>>();
             var trigramStats = new Dictionary<string, Dictionary<string, int>>();
-            
-            string[] sentences = text.Split(new[] {'.', '?', '!'}, StringSplitOptions.RemoveEmptyEntries);
+            var sentences = text.Split(new[] {'.', '?', '!'}, StringSplitOptions.RemoveEmptyEntries);
             
             foreach (string sentence in sentences)
             {
-                var words = sentence.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                var words = sentence.Split(new[] {' ',',', '-', ':', ';'}, StringSplitOptions.RemoveEmptyEntries);
                 if (words.Length >= 2)
                 {
-                    ProcessBigrams(words, bigramStats);
-                    ProcessTrigrams(words, trigramStats);
+                    SetNGramStats(words, bigramStats, trigramStats);
                 }
             }
             
@@ -30,58 +30,87 @@ namespace App.Practise2
             return result;
         }
 
-        private static void ProcessBigrams(string[] words, Dictionary<string, Dictionary<string, int>> bigramStats)
+        enum NGramType
         {
-            for (int i = 0; i < words.Length - 1; i++)
-            {
-                string currentWord = words[i];
-                string nextWord = words[i + 1];
+            Bigram,
+            Trigram
+        }
 
-                if (!bigramStats.ContainsKey(currentWord))
+        private static void SetNGramStats(string[] words,
+            Dictionary<string, Dictionary<string, int>> bigramStats,
+            Dictionary<string, Dictionary<string, int>> trigramStats)
+        {
+            for (var i = 0; i < words.Length - 1; i++)
+            {
+                var bigramModel = new NGramModel(words, i, NGramType.Bigram);
+                var trigramModel = new NGramModel(words, i, NGramType.Trigram);
+                UpdateStatsWithNewNGram(bigramStats, bigramModel);
+                if (trigramModel.NGramKey != String.Empty)
                 {
-                    bigramStats[currentWord] = new Dictionary<string, int> { { nextWord, 1 } };
-                }
-                else if (bigramStats[currentWord].ContainsKey(nextWord))
-                {
-                    bigramStats[currentWord][nextWord]++;
-                }
-                else
-                {
-                    bigramStats[currentWord].Add(nextWord, 1);
+                    UpdateStatsWithNewNGram(trigramStats, trigramModel);
                 }
             }
         }
 
-        private static void ProcessTrigrams(string[] words, Dictionary<string, Dictionary<string, int>> trigramStats)
+        private static void UpdateStatsWithNewNGram(Dictionary<string, Dictionary<string, int>> stats, NGramModel model)
         {
-            for (int i = 0; i < words.Length - 2; i++)
+            if (!stats.ContainsKey(model.NGramKey))
             {
-                string trigramKey = $"{words[i]} {words[i + 1]}";
-                string continuation = words[i + 2];
+                stats[model.NGramKey] = new Dictionary<string, int> {
+                {
+                    model.NGramValue, 1
+                } };
+            }
+            else if (stats[model.NGramKey]
+                     .ContainsKey(model.NGramValue))
+            {
+                stats[model.NGramKey][model.NGramValue]++;
+            }
+            else
+            {
+                stats[model.NGramKey].Add(model.NGramValue, 1);
+            }
+        }
 
-                if (!trigramStats.ContainsKey(trigramKey))
+        private struct NGramModel
+        {
+            public string NGramKey { get; init; }
+            public string NGramValue { get; init; }
+            
+
+            public NGramModel(string[] words, int currentWordIndex, NGramType type)
+            {
+                NGramKey = String.Empty;
+                NGramValue = String.Empty;
+                switch (type)
                 {
-                    trigramStats[trigramKey] = new Dictionary<string, int> { { continuation, 1 } };
-                }
-                else if (trigramStats[trigramKey].ContainsKey(continuation))
-                {
-                    trigramStats[trigramKey][continuation]++;
-                }
-                else
-                {
-                    trigramStats[trigramKey].Add(continuation, 1);
+                    case NGramType.Bigram:
+                        NGramKey = words[currentWordIndex];
+                        NGramValue = words[currentWordIndex + 1];
+                        break;
+                    case NGramType.Trigram:
+                        if (currentWordIndex + 2 < words.Length)
+                        {
+                            NGramKey = $"{words[currentWordIndex]} {words[currentWordIndex + 1]}";
+                            NGramValue = words[currentWordIndex + 2];
+                        }
+                        else
+                            NGramKey = NGramValue = String.Empty;
+                        break;
+                    default:
+                        break;
                 }
             }
         }
 
         private static void CreateDict(
-            Dictionary<string, Dictionary<string, int>> subDict,
+            Dictionary<string, Dictionary<string, int>> dictionaryWithNGramStats,
             Dictionary<string, string> resultDict)
         {
-            foreach (var kvp in subDict)
+            foreach (var oneNGramPair in dictionaryWithNGramStats)
             {
                 KeyValuePair<string, int> mostFrequent = default;
-                foreach (var continuation in kvp.Value)
+                foreach (var continuation in oneNGramPair.Value)
                 {
                     if (continuation.Value > mostFrequent.Value ||
                         (continuation.Value == mostFrequent.Value && 
@@ -90,7 +119,7 @@ namespace App.Practise2
                         mostFrequent = continuation;
                     }
                 }
-                resultDict.Add(kvp.Key, mostFrequent.Key);
+                resultDict.Add(oneNGramPair.Key, mostFrequent.Key);
             }
         }
     }
