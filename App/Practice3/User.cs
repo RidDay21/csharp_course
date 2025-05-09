@@ -28,13 +28,13 @@ public class User
     {
         return $"User: {name} {surname}";
     }
-    public static bool isPhoneValid(string inputString, out string parsedPhone) 
+    public static bool IsPhoneValid(string inputString, out string parsedPhone) 
     {
         parsedPhone = "";
-        string pattern = @"\b(\+?[87])([-\s]*\(?\d{3}\)?[-\s]*\d{3}[-\s]*\d{2}[-\s]*\d{2})\b";
-        Regex regex = new Regex(pattern);
-        MatchCollection matches  = regex.Matches(inputString);
-        int counter = matches.Count();
+        var pattern = @"\b(\+?[87])([-\s]*\(?\d{3}\)?[-\s]*\d{3}[-\s]*\d{2}[-\s]*\d{2})\b";
+        var regex = new Regex(pattern);
+        var matches  = regex.Matches(inputString);
+        var counter = matches.Count();
         if (counter != 0)
         {
             parsedPhone = matches[0].Value;
@@ -45,10 +45,9 @@ public class User
         return false;
     }
 
-    public bool TryUpdatePhone(string NewPhone)
+    public bool TryUpdatePhone(string newPhone)
     {
-        string tmpPhone;
-        if (isPhoneValid(NewPhone, out tmpPhone)) 
+        if (IsPhoneValid(newPhone, out var tmpPhone)) 
         {
             phone = tmpPhone;
             Console.WriteLine($"Телефон успешно изменен. Новый номер: {phone}");
