@@ -53,7 +53,7 @@ public class Rectangle : IGeometry
 
     void CalculateSides()
     {
-        List<double> sides = new List<double>();
+        var sides = new List<double>();
         for (var i = 1; i < VertexCount; i++)
         {
             sides.Add(Vertices[0].DistanceTo(Vertices[i]));
@@ -88,8 +88,8 @@ public class Triangle : IGeometry
         
         public double CalculateArea()
         {
-            double area = 0;
-            for (int i = 0; i < VertexCount; i++)
+            var area = 0.0d;
+            for (var i = 0; i < VertexCount; i++)
             {
                 area += Vertices[i].X * (Vertices[(i + 1) % 3].Y - Vertices[(i + 2) % 3].Y); 
             }
