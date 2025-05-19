@@ -8,6 +8,11 @@ public interface IGeometry
 {
     double CalculateArea();
     int VertexCount { get; }
+
+    public string FigureName()
+    {
+        return "Undefined figure.";
+    }
 }
 
 public class Vertex : I2DVertex
@@ -24,7 +29,14 @@ public class Vertex : I2DVertex
     public double DistanceTo(I2DVertex other)
     {
         return Math.Sqrt(Math.Pow(X - other.X, 2) + Math.Pow(Y - other.Y, 2));
-    } 
+    }
+
+    public override string ToString()
+    {
+        string xValue = X.ToString("F3");
+        string yValue = Y.ToString("0.000");
+        return $"x = {xValue}; y = {yValue}";
+    }
 }
 
 
@@ -62,6 +74,11 @@ public class Rectangle : IGeometry
         Height = sides[0];
         Width = sides[1];
     }
+
+    public string FigureName()
+    {
+        return "Прямоугольник";
+    }
 }
 
 public class Square : Rectangle  
@@ -72,6 +89,11 @@ public class Square : Rectangle
         {
             throw new Exception("Square width and height must match.");
         }
+    }
+
+    public new string FigureName()
+    {
+        return "Квадрат";
     }
 }
 
@@ -95,5 +117,19 @@ public class Triangle : IGeometry
             }
             return area * 0.5;
         }
-        
+
+        public string FigureName()
+        {
+            return "Треугольник";
+        }
     }
+
+public class Circle : IGeometry
+{
+    public int VertexCount { get; } = 0;
+
+    public double CalculateArea()
+    {
+        throw new NotImplementedException();
+    }
+}

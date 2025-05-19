@@ -14,7 +14,8 @@ namespace AppTests
         {
             var v1 = new Vertex(x1, y1);
             var v2 = new Vertex(x2, y2);
-
+            Console.WriteLine(v1.ToString());
+            
             var distance = v1.DistanceTo(v2);
 
             Assert.AreEqual(expected, distance, 1e-6);
