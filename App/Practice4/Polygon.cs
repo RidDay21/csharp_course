@@ -11,7 +11,7 @@ public interface IGeometry
 
     public string FigureName()
     {
-        return "Undefined figure.";
+        return "Undefined figure";
     }
 }
 
@@ -75,7 +75,7 @@ public class Rectangle : IGeometry
         Width = sides[1];
     }
 
-    public string FigureName()
+    public virtual string FigureName()
     {
         return "Прямоугольник";
     }
@@ -87,11 +87,12 @@ public class Square : Rectangle
     {
         if (Width != Height)
         {
+            Console.WriteLine($"Width {Width} != Height {Height};");
             throw new Exception("Square width and height must match.");
         }
     }
 
-    public new string FigureName()
+    public override string FigureName()
     {
         return "Квадрат";
     }

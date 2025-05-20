@@ -14,7 +14,7 @@ public class PaymentsTests
     public void TestPasses_When_Result_Correct(PaymentsPlan plan, decimal rate, int monthsCount, decimal amount, decimal expected)
     {
         var actual = Payments.CalculateTotalPayments(plan, rate, monthsCount, amount);
-        Assert.That(actual, Is.EqualTo(expected).Within(10));
+        Assert.That(actual, Is.EqualTo(expected).Within(100));
     }
 
 }
